@@ -1,0 +1,128 @@
+body {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 0.2em;
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+
+input[type=number] {
+    width: 6em;
+}
+
+/*INTERFACE*/
+
+.wrapper {
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+        'hd'
+        'sd'
+        'ct'
+        'ft'
+}
+@media all (min-width: 500px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+            'hd ct ct ct ct ct ct ct ct'
+            'hd ct ct ct ct ct ct ct ct'
+            'hd ft ft ft ft ft ft ft ft';
+    }
+}
+
+@media all (min-width: 700px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+            'ct ct ct ct ct ct ct ct ct'
+            'hd ct ct ct ct ct ct ct ct'
+            'sd ft ft ft ft ft ft ft ft';
+    }
+}
+/*HEADER*/
+.header {
+    grid-area: hd;
+    background: black;
+    color: #fff;
+    padding: 30px;
+}
+
+.orange {
+    color: orange;
+}
+.skyblue:hover {
+    color: skyblue;
+}
+input[type=number] {
+    width: 200px;
+    height: 20px;
+    padding: 5px;
+    font-size: 15px;
+}
+input[type=number]:focus {
+    color: skyblue;
+}
+input[type=submit] {
+    background: skyblue;
+    color: white;
+    padding: 8px 28px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+input[type=submit]:hover {
+    background: tomato;
+}
+/*SIDEBAR*/
+.sidebar {
+    grid-area: sd;
+    
+}
+
+/*CONTENT*/
+
+.content {
+    grid-area: ct;
+    margin-bottom: 20px;
+}
+
+/*FOOTER*/
+
+footer {
+    grid-area: ft;
+    background: #000;
+    color: #fff;
+}
