@@ -3,7 +3,7 @@ PIXEL ART MAKER IS A TASK GIVEN TO BENEFICIARIES UNDER GOING THE UDACITY , GOOGL
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pixel Art Maker!</title>
+    <title> karo Pixel Art Maker!</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -35,7 +35,7 @@ PIXEL ART MAKER IS A TASK GIVEN TO BENEFICIARIES UNDER GOING THE UDACITY , GOOGL
             </table>  
         </section>  
         <footer>
-            <p>design by Aleem</p>
+            <p>design by karo</p>
         </footer>
     </div>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
